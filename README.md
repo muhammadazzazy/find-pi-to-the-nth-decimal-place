@@ -3,6 +3,7 @@ This is a Python implementation for a program that takes the number of decimal p
 
 To start the  program, run the command below in a shell:
 
-`python3 main.py`
-
+```bash
+python3 main.py
+```
 The project idea was obtained from this [repo](https://github.com/karan/Projects).
