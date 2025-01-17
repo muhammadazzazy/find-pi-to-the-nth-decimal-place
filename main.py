@@ -22,7 +22,7 @@ if user_input.isnumeric():
 while not user_input.isnumeric():
     user_input = input(prompt)
     if user_input.isnumeric():
-        n = int(user_input)
+        n: int = int(user_input)
         while n > LIMIT:
             user_input = input(prompt)
             if user_input.isnumeric():
