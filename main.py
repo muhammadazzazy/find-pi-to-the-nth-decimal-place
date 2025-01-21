@@ -7,9 +7,9 @@ LIMIT: int = 15
 
 print(f'Welcome to The 🥧 Approximator!')
 
+prompt: str = f'Enter the number of decimal places (up to {LIMIT}): '
+
 while True:
-    prompt: str = f'Enter the number of decimal places (up to {LIMIT}): '
-    
     user_input: str = input(prompt)
 
     if user_input == 'exit':
