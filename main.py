@@ -16,7 +16,7 @@ while True:
         print('Thanks for trying my program!')
         exit()
 
-    if not user_input.isnumeric() or int(user_input) > 15:
+    if not user_input.isnumeric() or int(user_input) > LIMIT:
         print(f'Enter a whole number between 0 and {LIMIT}!')
         continue    
     else:
