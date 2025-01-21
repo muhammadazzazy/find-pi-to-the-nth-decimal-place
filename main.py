@@ -1,33 +1,24 @@
 from math import pi
+from sys import exit
 
-# print(type(pi))
 PI: str = str(pi)
 
 LIMIT: int = 15
-print(f'This program finds pi to the nth decimal place where n is at most {LIMIT}.')
 
-prompt: str = 'Enter the number of decimal places: '
+print(f'Welcome to the 🥧 Approximator!')
 
-user_input: str = input(prompt)
+while True:
+    prompt: str = f'Enter the number of decimal places (up to {LIMIT}): '
+    
+    user_input: str = input(prompt)
 
-if user_input.isnumeric():
-    n: int = int(user_input)
-    while n > LIMIT:
-        user_input = input(prompt)
-        if user_input.isnumeric():
-            n = int(user_input)
-        else:
-            break
+    if user_input == 'exit':
+        print('Thanks for trying our program!')
+        exit()
 
-while not user_input.isnumeric():
-    user_input = input(prompt)
-    if user_input.isnumeric():
-        n: int = int(user_input)
-        while n > LIMIT:
-            user_input = input(prompt)
-            if user_input.isnumeric():
-                n = int(user_input)
-            else:
-                break
-
-print(f'pi to the {n}th decimal place is {PI[:n+2]}')
+    if not user_input.isnumeric() or int(user_input) > 15:
+        print(f'Enter a whole number between 0 and {LIMIT}!')
+        continue    
+    else:
+        n = int(user_input)
+        print(f'pi to the {n}th decimal place is {PI[:n+2]}')
