@@ -13,7 +13,7 @@ while True:
     user_input: str = input(prompt)
 
     if user_input == 'exit':
-        print('Thanks for trying our program!')
+        print('Thanks for trying my program!')
         exit()
 
     if not user_input.isnumeric() or int(user_input) > 15:
