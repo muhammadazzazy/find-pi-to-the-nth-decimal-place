@@ -5,7 +5,7 @@ PI: str = str(pi)
 
 LIMIT: int = 15
 
-print(f'Welcome to the 🥧 Approximator!')
+print(f'Welcome to The 🥧 Approximator!')
 
 while True:
     prompt: str = f'Enter the number of decimal places (up to {LIMIT}): '
