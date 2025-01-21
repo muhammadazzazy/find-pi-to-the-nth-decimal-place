@@ -20,5 +20,5 @@ while True:
         print(f'Enter a whole number between 0 and {LIMIT}!')
         continue    
     else:
-        n = int(user_input)
+        n: int = int(user_input)
         print(f'pi to the {n}th decimal place is {PI[:n+2]}')
