@@ -17,8 +17,8 @@ while True:
         exit()
 
     if not user_input.isnumeric() or int(user_input) > LIMIT:
-        print(f'Enter a whole number between 0 and {LIMIT}!')
+        print(f'Please enter a whole number between 0 and {LIMIT}...')
         continue    
-    else:
-        n: int = int(user_input)
-        print(f'pi to the {n}th decimal place is {PI[:n+2]}')
+    
+    n: int = int(user_input)
+    print(f'pi to the {n}th decimal place is {PI[:n+2]}')
