@@ -23,4 +23,5 @@ def main() -> None:
         print(f'pi to the {n}th decimal place is {PI[:n+2]}')
 
 
-main()
+if __name__ == '__main__':
+    main()
